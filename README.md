@@ -1,9 +1,6 @@
 # Hemsida
-School Project
 
-Notepad++ 
+Företags Hemsida
 
-HTML - Structure
-CSS - Design
 
-Author: Hampus Stoeckmann
+
