@@ -1,0 +1,68 @@
+body{
+	padding : 1;
+	margin : 1;
+	border : 0;
+	background: #ffffff;
+}
+
+/* ----------- Laptops Non-Retina ----------- */
+@media screen 
+  and (min-device-width: 1000px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+	
+.blended_grid{
+	display : block;
+	width : 960px;
+	overflow : hidden;
+	margin : 30px auto 0 auto;
+	border-radius: 10px;
+}
+
+.pageHeader{
+	float : left;
+	clear : none;
+	height : 200px;
+	width : 960px;
+	border: 1px solid white;
+}
+
+
+.menyHorizontal{
+	background-color : rgba(0, 0, 0, 0.5);
+	float : left;
+	clear : none;
+	height : 70px;
+	width : 960px;
+	border: 1px solid white;
+}
+
+
+.pageContent{
+	background-color : rgba(0, 0, 0, 0.5);
+	float : left;
+	clear : none;
+	height : 680px;
+	width : 860px;
+	border: 1px solid white;
+}
+
+.pageContentLeft {
+	background-color : rgba(0, 0, 0, 0.5);
+	float : left;
+	clear : none;
+	height : 680px;
+	width : 100px;
+	border: 1px solid white;
+}
+
+
+.pageBot{
+	background-color : rgba(0, 0, 0, 0.5);
+	float : left;
+	clear : none;
+	height : 20px;
+	width : 960px;
+	border: 1px solid white;
+}
