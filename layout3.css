@@ -1,68 +1,163 @@
 body{
 	padding : 1;
 	margin : 1;
-	border : 0;
-	background: #ffffff;
+	border : 1px solid white;
+	background: url(img/Background.jpg);
 }
 
-/* ----------- Laptops Non-Retina ----------- */
+/* ----------- Desktop Above 1600px ----------- */
 @media screen 
-  and (min-device-width: 1000px) 
-  and (max-device-width: 1600px) 
+  and (min-device-width: 1600px) 
+  and (max-device-width: 2000px) 
   and (-webkit-min-device-pixel-ratio: 1) {
-
 	
 .blended_grid{
 	display : block;
 	width : 960px;
 	overflow : hidden;
-	margin : 30px auto 0 auto;
+	margin : auto;
 	border-radius: 10px;
 }
 
 .pageHeader{
-	float : left;
+	background-color : rgba(0, 0, 0, 0.5);
+	float : right;
 	clear : none;
 	height : 200px;
-	width : 960px;
-	border: 1px solid white;
+	width : 706px;
+	border : 1px solid white;
+	overflow: hidden;
 }
 
+.LogoTop{
+	background-color : rgba(0, 0, 0, 0.5);
+	float: left;
+	clear: none;
+	height: 200px;
+	width: 250px;
+	border: 1px solid white;
+	overflow: hidden;
+}	
+	
 
-.menyHorizontal{
+
+.pageHorizontalMenu{
 	background-color : rgba(0, 0, 0, 0.5);
 	float : left;
 	clear : none;
-	height : 70px;
-	width : 960px;
-	border: 1px solid white;
+	height : 90px;
+	width : 959px;
+	border : 1px solid white;
 }
-
 
 .pageContent{
 	background-color : rgba(0, 0, 0, 0.5);
 	float : left;
 	clear : none;
-	height : 680px;
-	width : 860px;
-	border: 1px solid white;
+	height : 620px;
+	width : 760px;
+	border : 1px solid white;
 }
 
-.pageContentLeft {
+.pageMenuRight {
+	background-color : rgba(0, 0, 0, 0.5);
+	float : right;
+	clear : none;
+	height : 620px;
+	width : 196px;
+	border : 1px solid white;
+}
+
+.pageFooter{
 	background-color : rgba(0, 0, 0, 0.5);
 	float : left;
 	clear : none;
-	height : 680px;
-	width : 100px;
-	border: 1px solid white;
+	height : 70px;
+	width : 959px;
+	border : 1px solid white;
+}
+
+/* CSS Meny Inställningar */
+
+
+#meny {
+	list-style: none;
+	font-weight: bold;
+	margin-bottom: 10px;
+	float: left;
+	width: 100%;
+	position: relative;
+	z-index: 5;
+}
+
+#meny li {
+	float: left;
+	margin-right: 10px;
+	position: relative;
+}
+	  
+#meny a {
+	display: block;
+	text-align: center;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+	color: white;
+	background: #303030;
+    padding: 10px;
+	text-decoration: none;
 }
 
 
-.pageBot{
-	background-color : rgba(0, 0, 0, 0.5);
-	float : left;
-	clear : none;
-	height : 20px;
-	width : 960px;
-	border: 1px solid white;
+#meny li a:hover {
+	cursor: pointer;
+	background: #ff6600;
+	color: white;
+	text-decoration: none;
+}
+
+/* DROPDOWN */
+
+#meny ul {
+	background: #333333; /* Byter BakgrundsFärg på Huvudkategori */
+	background: rgba(255, 255, 255, 0);
+	list-style: none;
+	position: absolute;
+	left: -9999px;	/* När DROPDOWN inte används är den placerad långt utanför skärmen */
+}
+
+#meny ul li {
+	padding-top: 10px;
+	float: none;
+}
+
+#meny ul a {
+	white-space: nowrap; /* Gör så att texten inte byter rad */
+}
+
+#meny li:hover ul {
+	left: 0;
+}
+
+#meny li:hover a {
+	background: #ff6600; /* Byter Färg på Huvudkategori (på :hover) */
+	text-decoration: none;
+}
+
+#meny li:hover ul a {
+	text-decoration: none;
+}
+
+#meny li:hover ul li a:hover {
+	background: #303030; /* Byter Färg på Underkategori (på :hover) */
+}
+
+} /* slutTag Horizontel Desktop Meny */
+
+
+
+/* Länkar visas som vanlig text */
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
 }

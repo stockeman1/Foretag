@@ -4,35 +4,70 @@
 <meta http-equiv="content-type" name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
 
-<link rel="stylesheet" href="layout3.css">
-<link rel="stylesheet" media="screen and (min-width: 1600px) and (max-device-width: 2000px)" href="layout33.css">
-<link rel="stylesheet" media="screen and (min-width: 1000px) and (max-width: 1600px)" href="layout22.css">
-<link rel="stylesheet" media="screen and (min-width: 300px) and (max-width: 667px)" href="layout11.css">
+
+<link rel="stylesheet" media="screen and (min-width: 1600px) and (max-device-width: 2000px)" href="layout3.css">
+<link rel="stylesheet" media="screen and (min-width: 1200px) and (max-width: 1600px)" href="layout2.css">
+<link rel="stylesheet" media="screen and (min-width: 300px) and (max-width: 667px)" href="layout.css">
 
 <title>Hem</title>
 </head>
 
 <body>
 
+<script type="text/javascript">
+    var feed = new Instafeed({
+		sortBy: 'most-recent',
+		resolution: 'thumbnail',
+        clientId: 'a23792f46b1943569b8a232de3c95aaf'
+    });
+    feed.run();
+</script>
+
+<div class="blended_grid">
+
+<div class="LogoTop">
+
+<a href="index.html"> <img src="img/Logo.jpg"> </a>
+
+</div>
+
 <div class="pageHeader">
-<h1> Logo / Bilder </h1>
-</div>
 
-<div class="menyHorizontal">
-<h1> Meny </h1>
-</div>
+<a href="index.html"> <img src="img/ByggHBG.png"> </a>
 
+</div>
+<div class="pageHorizontalMenu">
+
+<center>
+		<ul id="meny">
+			<li> <a href="#"> Rubrik 1 </a> </li>
+			<li> <a href="#"> Rubrik 2 </a> </li>
+			<li> <a href="#"> Rubrik 3 </a> </li>
+			<li> <a href="#"> Rubrik 4 </a> </li>
+			<li> <a href="#"> Rubrik 5 </a> </li>
+			<li> <a href="#"> Rubrik 6 </a> </li>
+			<li> <a href="#"> Rubrik 7 </a> </li>
+			<li> <a href="#"> Rubrik 8 </a> </li>
+		</ul>
+</center>	
+
+</div>
 <div class="pageContent">
-<h1> Content </h1>
+
+<div id="instafeed">
+
 </div>
 
-<div class="pageContentLeft">
-<h1> Meny Höger </h1>
+</div>
+<div class="pageMenuRight">
+
 </div>
 
-<div class="pageBot">
-<h1> Address / Kontakt info </h1>
-</div> 
+<div class="pageFooter">
+
+
+</div>
+</div>
 
 
 </body>
