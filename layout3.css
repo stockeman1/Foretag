@@ -1,163 +1,460 @@
 body{
-	padding : 1;
-	margin : 1;
-	border : 1px solid white;
-	background: url(img/Background.jpg);
+	margin: 1%;
+	padding: 2%;
+	border : 1px solid black;
+	background: #ffffff;
+	text-align: center;
+	overflow-y: scroll;
 }
 
-/* ----------- Desktop Above 1600px ----------- */
+/* ----------- Laptops Different Sizes ----------- */
 @media screen 
-  and (min-device-width: 1600px) 
-  and (max-device-width: 2000px) 
+  and (min-device-width: 998px) 
+  and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 1) {
+
 	
 .blended_grid{
 	display : block;
-	width : 960px;
+	width : 100%;
+	height: 100%;
 	overflow : hidden;
-	margin : auto;
-	border-radius: 10px;
+	border: 1px solid black;
 }
 
 .pageHeader{
-	background-color : rgba(0, 0, 0, 0.5);
-	float : right;
-	clear : none;
-	height : 200px;
-	width : 706px;
-	border : 1px solid white;
-	overflow: hidden;
-}
-
-.LogoTop{
-	background-color : rgba(0, 0, 0, 0.5);
-	float: left;
-	clear: none;
-	height: 200px;
-	width: 250px;
-	border: 1px solid white;
-	overflow: hidden;
-}	
-	
-
-
-.pageHorizontalMenu{
-	background-color : rgba(0, 0, 0, 0.5);
 	float : left;
 	clear : none;
-	height : 90px;
-	width : 959px;
-	border : 1px solid white;
+	height : 20%;
+	width : 100%;
+	overflow: hidden;
+	background-color: #dd052c;
+}
+
+.menyHorizontal{
+	float : left;
+	clear : none;
+	height : 10%;
+	width : 100%;
+	background-color: white;
+	color: white;
+}
+
+.content {
+	border: 1px solid black;
 }
 
 .pageContent{
-	background-color : rgba(0, 0, 0, 0.5);
 	float : left;
 	clear : none;
-	height : 620px;
-	width : 760px;
-	border : 1px solid white;
+	height : 60%;
+	width : 80%;
 }
 
-.pageMenuRight {
-	background-color : rgba(0, 0, 0, 0.5);
-	float : right;
-	clear : none;
-	height : 620px;
-	width : 196px;
-	border : 1px solid white;
-}
-
-.pageFooter{
-	background-color : rgba(0, 0, 0, 0.5);
+.pageContentRight {
 	float : left;
 	clear : none;
-	height : 70px;
-	width : 959px;
-	border : 1px solid white;
+	height : 60%;
+	width : 20%;
+
 }
 
-/* CSS Meny Inställningar */
+.pageBot{
+	float : left;
+	clear : none;
+	height : 10%;
+	width : 100%;
+}
 
-
-#meny {
+#Meny {
 	list-style: none;
 	font-weight: bold;
 	margin-bottom: 10px;
 	float: left;
 	width: 100%;
 	position: relative;
+	max-width: 960px;
 	z-index: 5;
 }
 
-#meny li {
+#Meny li {
 	float: left;
 	margin-right: 10px;
 	position: relative;
 }
 	  
-#meny a {
+#Meny a {
 	display: block;
 	text-align: center;
 	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
 	color: white;
-	background: #303030;
+	background: #ff0000;
     padding: 10px;
 	text-decoration: none;
 }
 
 
-#meny li a:hover {
+#Meny li a:hover {
 	cursor: pointer;
 	background: #ff6600;
 	color: white;
 	text-decoration: none;
 }
 
-/* DROPDOWN */
-
-#meny ul {
-	background: #333333; /* Byter BakgrundsFärg på Huvudkategori */
-	background: rgba(255, 255, 255, 0);
-	list-style: none;
-	position: absolute;
-	left: -9999px;	/* När DROPDOWN inte används är den placerad långt utanför skärmen */
+#Content {
+	text-align: center;
+	margin: auto;
+	padding: 2%;
 }
 
-#meny ul li {
-	padding-top: 10px;
-	float: none;
+#ContentRight {
+	text-align: center;
 }
 
-#meny ul a {
-	white-space: nowrap; /* Gör så att texten inte byter rad */
-}
-
-#meny li:hover ul {
-	left: 0;
-}
-
-#meny li:hover a {
-	background: #ff6600; /* Byter Färg på Huvudkategori (på :hover) */
-	text-decoration: none;
-}
-
-#meny li:hover ul a {
-	text-decoration: none;
-}
-
-#meny li:hover ul li a:hover {
-	background: #303030; /* Byter Färg på Underkategori (på :hover) */
-}
-
-} /* slutTag Horizontel Desktop Meny */
-
-
-
-/* Länkar visas som vanlig text */
 a {
 	text-decoration: none;
+	color: white;
+}
+
+
+
+}
+
+
+
+
+/* ----------- Desktop ----------- */
+@media screen 
+  and (min-device-width: 1601px) 
+  and (max-device-width: 2144px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+	
+.blended_grid{
+	display : block;
+	width : 100%;
+	height: 100%;
+	overflow : hidden;
+	border: 1px solid black;
+}
+
+.pageHeader{
+	float : left;
+	clear : none;
+	height : 20%;
+	width : 100%;
+	overflow: hidden;
+	background-color: #dd052c;
+}
+
+.menyHorizontal{
+	float : left;
+	clear : none;
+	height : 10%;
+	width : 100%;
+	background-color: white;
+	color: white;
+}
+
+.content {
+	border: 1px solid black;
+}
+
+.pageContent{
+	float : left;
+	clear : none;
+	height : 60%;
+	width : 80%;
+}
+
+.pageContentRight {
+	float : left;
+	clear : none;
+	height : 60%;
+	width : 20%;
+
+}
+
+.pageBot{
+	float : left;
+	clear : none;
+	height : 10%;
+	width : 100%;
+}
+
+#Meny {
+	list-style: none;
+	font-weight: bold;
+	margin-bottom: 10px;
+	float: left;
+	width: 100%;
+	position: relative;
+	max-width: 960px;
+	z-index: 5;
+}
+
+#Meny li {
+	float: left;
+	margin-right: 10px;
+	position: relative;
+}
+	  
+#Meny a {
+	display: block;
+	text-align: center;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+	color: white;
+	background: #ff0000;
+    padding: 10px;
+	text-decoration: none;
+}
+
+
+#Meny li a:hover {
 	cursor: pointer;
+	background: #ff6600;
+	color: white;
+	text-decoration: none;
+}
+
+#Content {
+	text-align: center;
+	margin: auto;
+	padding: 2%;
+}
+
+#ContentRight {
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+}
+
+
+
+
+/* ----------- Phone (max 320px) ----------- */
+@media screen  
+  and (max-device-width: 320px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+	
+.blended_grid{
+	display : block;
+	width : 100%;
+	height: 100%;
+	overflow : hidden;
+	border: 1px solid black;
+}
+
+.pageHeader{
+	float : left;
+	clear : none;
+	height : 20%;
+	width : 100%;
+	overflow: hidden;
+	background-color: #dd052c;
+}
+
+.menyHorizontal{
+	float : left;
+	clear : none;
+	height : 10%;
+	width : 100%;
+	background-color: white;
+	color: white;
+}
+
+.content {
+	border: 1px solid black;
+}
+
+.pageContent{
+	float : left;
+	clear : none;
+	height : 60%;
+	width : 80%;
+}
+
+.pageContentRight {
+	float : left;
+	clear : none;
+	height : 60%;
+	width : 20%;
+
+}
+
+.pageBot{
+	float : left;
+	clear : none;
+	height : 10%;
+	width : 100%;
+}
+
+#Meny {
+	list-style: none;
+	font-weight: bold;
+	margin-bottom: 10px;
+	float: left;
+	width: 100%;
+	position: relative;
+	max-width: 960px;
+	z-index: 5;
+}
+
+#Meny li {
+	float: left;
+	margin-right: 10px;
+	position: relative;
+}
+	  
+#Meny a {
+	display: block;
+	text-align: center;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+	color: white;
+	background: #ff0000;
+    padding: 10px;
+	text-decoration: none;
+}
+
+
+#Meny li a:hover {
+	cursor: pointer;
+	background: #ff6600;
+	color: white;
+	text-decoration: none;
+}
+
+#Content {
+	text-align: center;
+	margin: auto;
+	padding: 2%;
+}
+
+#ContentRight {
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+}
+
+
+/* ----------- Phablets, Tablets (min 997px) ----------- */
+@media screen 
+  and (min-device-width: 321px) 
+  and (max-device-width: 997px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+	
+.blended_grid{
+	display : block;
+	width : 100%;
+	height: 100%;
+	overflow : hidden;
+	border: 1px solid black;
+}
+
+.pageHeader{
+	float : left;
+	clear : none;
+	height : 20%;
+	width : 100%;
+	overflow: hidden;
+	background-color: #dd052c;
+}
+
+.menyHorizontal{
+	float : left;
+	clear : none;
+	height : 10%;
+	width : 100%;
+	background-color: white;
+	color: white;
+}
+
+.content {
+	border: 1px solid black;
+}
+
+.pageContent{
+	float : left;
+	clear : none;
+	height : 60%;
+	width : 80%;
+}
+
+.pageContentRight {
+	float : left;
+	clear : none;
+	height : 60%;
+	width : 20%;
+
+}
+
+.pageBot{
+	float : left;
+	clear : none;
+	height : 10%;
+	width : 100%;
+}
+
+#Meny {
+	list-style: none;
+	font-weight: bold;
+	margin-bottom: 10px;
+	float: left;
+	width: 100%;
+	position: relative;
+	max-width: 960px;
+	z-index: 5;
+}
+
+#Meny li {
+	float: left;
+	margin-right: 10px;
+	position: relative;
+}
+	  
+#Meny a {
+	display: block;
+	text-align: center;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+	color: white;
+	background: #ff0000;
+    padding: 10px;
+	text-decoration: none;
+}
+
+
+#Meny li a:hover {
+	cursor: pointer;
+	background: #ff6600;
+	color: white;
+	text-decoration: none;
+}
+
+#Content {
+	text-align: center;
+	margin: auto;
+	padding: 2%;
+}
+
+#ContentRight {
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: white;
 }
 
 }
